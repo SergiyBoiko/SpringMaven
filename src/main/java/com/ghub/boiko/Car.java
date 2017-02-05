@@ -1,5 +1,7 @@
-import carparts.Engine;
-import carparts.Wheel;
+package com.ghub.boiko;
+
+import com.ghub.boiko.carparts.Engine;
+import com.ghub.boiko.carparts.Wheel;
 
 public class Car {
 
@@ -7,6 +9,11 @@ public class Car {
     private Engine engine;
 
     public Car() {
+    }
+
+    public Car(Wheel wheels, Engine engine) {
+        this.wheels = wheels;
+        this.engine = engine;
     }
 
     public Wheel getWheels() {

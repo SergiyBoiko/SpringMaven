@@ -1,15 +1,15 @@
-package carparts;
+package com.ghub.boiko.carparts;
+
+import org.springframework.beans.factory.annotation.Value;
 
 public class Tyres {
 
+    @Value("${tyresSize}")
     private String size;
+    @Value("${tyresName}")
     private String name;
 
-    public Tyres(String size, String name) {
-        super();
-        this.size = size;
-        this.name = name;
-    }
+    public Tyres(){}
 
     public String getSize() {
         return size;
